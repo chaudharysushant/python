@@ -3,8 +3,7 @@ import numpy as np
 	x= np.linspace(0, 10, 100)
  	y1=np.sin(x)
 	y2=np.cos(x)
- 	y3=np.random.rand(100)*5
- 	
+ 	y3=np.random.rand(100)*5	
 fig, ax=plt.subplots()
 ax.plot(x, y1, label='sin(x)')
 ax.plot(x, y2, label='cos(x)')
