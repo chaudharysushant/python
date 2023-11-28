@@ -1,0 +1,18 @@
+import matplotlib.pyplot as plt
+import numpy as np
+	x= np.linspace(0, 10, 100)
+ 	y1=np.sin(x)
+	y2=np.cos(x)
+ 	y3=np.random.rand(100)*5
+ 	
+fig, ax=plt.subplots()
+ax.plot(x, y1, label='sin(x)')
+ax.plot(x, y2, label='cos(x)')
+ax.scatter(x, y3, c='red', label='Random Data')
+ax.annotate('Peak', xy=(np.pi/2,1),xytext=(np.pi/2, 1.5),arrowprops=dict(facecolor='black', shrink=0.05))
+ax.set-xlabel('X-axis')
+ax.set_xlabel('X-axis')
+ax.set_ylabel('Y-axis')
+ax.set_title('Graph Data')
+ax.legend()
+plt.show()
